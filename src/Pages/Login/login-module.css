@@ -1,0 +1,161 @@
+
+.formContainer {
+	width: 200px;
+}
+.error {
+	font-size: 1rem;
+	color: #bb0000;
+}
+
+.loginForm {
+	display: flex;
+	flex-direction: column;
+}
+
+.loginFormItem {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.mainlogin {
+    overflow: hidden;
+    align-items: stretch;
+	flex-direction: row;
+	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.login-form {
+    width: 600px;
+    min-height: 87vh;
+    display: block;
+    padding: 0 11%;
+}
+
+.login-bg {
+    background-image: url('./images/construction.jpg');
+    width: calc(100% - 600px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -90px;
+    position: relative;
+    z-index: 1;
+}
+.Login_text_fontsize {
+    margin-top: 35%;
+}
+.passsection {
+    position: relative;
+  }
+
+.passsection .password {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(data:image/png;base64,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);
+    top: 10px;
+    right: 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 90% 95%;
+  }
+  
+  .passsection .text {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEiUlEQVR4nO3aW6hVRRzH8c85HvPooYuZnjKTysqO0t2HICuyF4sgK4LuRDcoezGo8ygYaZl0oR60oqcKwyK0IMJSySAps6tdj1FSkVJKWt6ydg/jht1pZq+19tn7eIj1hXlaM7//zFpr/vOf/wwlJSUlJSUlJSUlJSWtpxNTcD5m4VbchitwAaZi1EHrXQs4FFdiEd7FPlQyyp94H4/hahwx6L0eIG2Yjmfxu+wBZ5XdeA4z0D6I4yhMO67DlwY+6FT5Vpg2wwZpTLmZgQ+0buD9y6e4RPjbDipHY4X8Hf8Nq7AEC3DvgTIfi7ES2wvovYHjWj7KBJdia0YHK4Lzm4PJ8s3hNpyE2Xgbf2fobxMc7aAxAo9mdGrXgTrHN8HeBDyInRk2n0JXE+zVZbTwVVKd2IeF6G6B7SMxT3i5KfvrMa4FtsGxgvNJGV+LnlYZr+FEYe6n+tGHSc022oPNCYN7cKf8a/RwzMQjeEVwoouFJfSwnBptuEE6ztiCs3JqZdKDXxKGvse0nDrtwhr+c0Kr6jvul38uT8FXCa0dOCenTpIJ0l9+FY7KqdOF5Qmd1Do/Maf24Xg1obPFAKbDaHyWEF4urAZ56MDqhE69shljC9h4PqGzSQNOeaTg1GKCLwrzOC/zEzp5ylsF7AzDMwmdDfL7F4SNTExoqWJx+ETsjejsRK8wR08TtsQ/JWxeXsBeuxAPxHSWyRk635QQWC3/b19lUUTnc2Ep689YrIvUX1vQZoe0T5id1bgHf0QabtTYvvzrfjp/qb9q9Aj5gNo2+4UgqAhdQk6h/zj24uxUo1Higc6v8nvkWsZFtF7K0e6FSLvLGrDfjR8iWn0S/mBhpHJFyMw0wpkRrd4c7Xoj7W5vsA9zI1oVPBGr3OwXcEZEa26OdvMi7W5ssA+pF/BkrPJIfByp3OgUGBPR+kb9KK9LyPr0b3dyA/a78WNEa5MQPEWZLB5fbxQCo6JsiGgtxSGRum14OlL/wwbs1nOCmeHx9ZGGFaxRfBmck9DaKGyIOoW4YhpeTtS9o6DNDryW0MpcBqvEvkT163UU6Eyn4HVjWhUh27O/zvOPFMsENyUQqnZ8TUKoaCh8rnhskVW24/QCdpoaChMcRcwpVoTNUGcBrYsFZ5p38NuEF5eX4Zq8GaoyHt8lhItshwlb62Wyk5wrcEwB3Xrb4a1CgnVATJbO/hZJiFTpwQPCC+zDF3hd2DWeWlBrqv+G29Wys4G+JTlF+k/Yg7sM7rFVmxAcpVJiWzVx8FXGq58UfUdIUbWaSbKTogP+7VOMlk6UVIS0+MNakxYfI+QLd9exv75Ftv/FCCGjW8+R7RL2ECc0wd4EPGSIHIzUMlNIOmYtaetwj+JHY3er/7fVLplXNWlMhekWcvt51/cdQmZpiXDcdZ9wOLpAOBt4U7HD0ZUO4uFoLReKbz5aVT4xRI7Ha2nHtVp7QWITbjYEL0jU0obzNP+KzEWG+BWZGI1eknoPj+MajeUhhiwjhVB4upDvv0U4L5wlXJ2b4n92Ta6kpKSkpKSkpKSkZGjyD3IrSGMEd+SHAAAAAElFTkSuQmCC);
+    top: 10px;
+    right: 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 90% 95%;
+    
+  }
+  
+  
+.login-btn {
+	border: 1px solid #d0cc12!important;
+}
+.navbar {
+    position: relative;
+    padding: .5rem 1rem;
+}
+
+
+/* The container */
+.customCheckbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .customCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .Customcheckmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    outline: 1px solid #000000;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .customCheckbox:hover input ~ .Customcheckmark {
+    background-color: #ffffff;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .customCheckbox input:checked ~ .Customcheckmark {
+    background-color:#cbce32!important;
+    outline: 1px solid #cbce32!important;
+  }
+  
+  /* Create the Customcheckmark/indicator (hidden when not checked) */
+  .Customcheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the Customcheckmark when checked */
+  .customCheckbox input:checked ~ .Customcheckmark:after {
+    display: block;
+  }
+  
+  /* Style the Customcheckmark/indicator */
+  .customCheckbox .Customcheckmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #263a93;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .customInputForm{
+    border-radius: 7px;
+    box-shadow: 1px 2px #ccc;
+  }
+  .textcolor-blue{
+    color: #0056b3;
+  }

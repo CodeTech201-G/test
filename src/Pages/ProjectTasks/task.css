@@ -1,0 +1,101 @@
+.circle-generator {
+  width: 350px;
+  height: 320px;
+  border-width: thick !important;
+}
+
+.customCursor {
+  cursor: pointer;
+  /* width: fit-content; */
+}
+
+.task-border {
+  border-radius: 12px;
+}
+
+.icon-style1 {
+  width: 25px;
+  cursor: pointer;
+}
+
+.position-set {
+  padding-top: 80px;
+}
+
+.desc-height {
+  height: 150px !important;
+}
+
+/* this code is for radio button */
+
+.green_radio {
+  /* display: block; */
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+}
+
+.green_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom radio button */
+
+.checkmark_radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  /* background-color: #eee; */
+  border-radius: 50%;
+  border: 1px solid #263a93;
+}
+/* On mouse-over, add a grey background color */
+
+.green_radio:hover input ~ .checkmark {
+  background-color: #fff;
+}
+/* When the radio button is checked, add a blue background */
+
+.green_radio input:checked ~ .checkmark_radio {
+  background-color: #fff;
+  border: 1px solid #263a93;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark_radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/*  Show the indicator (dot/circle) when checked  */
+
+.green_radio input:checked ~ .checkmark_radio:after {
+  display: block;
+}
+/* Style the indicator (dot/circle)  */
+
+.green_radio .checkmark_radio:after {
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background: #263a93;
+}
+.customheight {
+  height: 31vh;
+  object-fit: fill;
+}
+.picture_task_bkbtn{
+  margin-left: -4%;
+}

@@ -1,0 +1,23 @@
+.content-wrapper{
+    border-radius: 10px;
+
+}
+.report-details{
+    max-height: 62vh;
+    overflow-y: scroll;
+    scrollbar-color: #fff #fff;
+}
+.report-details::-webkit-scrollbar {
+    width: 1em;
+}
+
+.report-details::-webkit-scrollbar-track {
+  background: #fff
+}
+
+.report-details::-webkit-scrollbar-thumb {
+  background:#fff
+}
+.task-item{
+    border-bottom: 2px solid #a1a0a02e;
+}

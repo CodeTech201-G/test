@@ -1,0 +1,45 @@
+.pagetitle {
+  font-size: 28px;
+}
+.browserback {
+  width: 35px;
+  height: 35px;
+  background-color: #cbce32 !important;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: transparent;
+  background-image: url("../../Static/Assets/backButton.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 30px;
+  cursor: pointer;
+}
+.bg-color {
+  background-color: sandybrown;
+}
+.ProjectlistPageIcons {
+  width: 40px;
+}
+.custom-pointer {
+  cursor: pointer;
+}
+.edit-addresses input,
+.edit-addresses select {
+  background-color: #ffff !important;
+  border-radius: 10px;
+}
+.edit_proj_main input {
+  background-color: #ffff !important;
+  border-radius: 10px;
+  border: #fff;
+  box-shadow: 1px 2.5px 1px 1px #88888861;
+}
+.edit_proj_main {
+  width: 100%;
+  float: left;
+  height: auto !important;
+}
+.custom-font-size{
+  font-size: 90%;
+}

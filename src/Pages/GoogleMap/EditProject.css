@@ -1,0 +1,11 @@
+.edit_proj_main input {
+  background-color: #ffff !important;
+  border-radius: 10px;
+  border: #fff;
+  box-shadow: 1px 2.5px 1px 1px #88888861;
+}
+.edit_proj_main {
+  width: 100%;
+  float: left;
+  height: auto !important;
+}

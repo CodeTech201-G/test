@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0px;
+}
+.popup-page{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(207, 207, 207);
+    padding: 50px;
+}
+
+
+.btn{
+    padding: 5px 20px;
+}
+
+.popup-btn {
+    text-align: center;
+    /* padding-top: 40px; */
+}
+
+/* css Style code for popup container */
+
+.popup-container{
+    position: fixed;
+    width: 100v;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.5);
+
+}
+
+.popup-inner-div{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: white;
+}
+
+.popup-title{
+    background-color: rgb(78, 78, 78);
+}
+
+#popup-title{
+    padding: 10px;
+    color: white;
+    font-family: "BrandonGrotesque-Bold";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.popup-body{
+    height: 100px;
+}
+
+  
+  /* .btn::after {
+    content: "";
+    width: 10px;
+    height: 18px;
+    position: absolute;
+    border-left: 1px solid #ddd;
+    right: 80px;
+      bottom: -10px;
+    transform: rotate(125deg);
+    background: #ddd;
+  } */
+
+.user-body-div {
+    width: 85%;
+    margin: auto;
+}
+.createUsers .popup-btn {
+    text-align: right;
+    padding-right: 2%;
+}
+
+.popup-title{
+    position: relative;
+}
+
+.popup-title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border-top: 25px solid #cecece52;
+    border-left: 25px solid #4e4e4e;
+    width: 0;
+    background: none;
+    outline: 0;
+}
+
+.deletepopup .popup_body {
+    width: 100%;
+    float: left;
+    margin-top: 12%;
+    margin-bottom: 4%;
+}
+
+.manage-addr-main-div .btn:after {
+    border-left: 1px solid #ddd !important;
+    background-color: #ddd!important;
+    right: 80px !important;
+}
+
+.popup_body {
+    margin-top: 4%;
+    /* padding-top: 50px; */
+
+}
+select {
+    background-color: #fff;
+}
+
+.user-section1 {
+    width: 100%;
+    float: left;
+    padding: 10px 20px;
+}
+
+.user-section4 {
+    clear: left;
+}
+ .user-section5,
+ .user-section4,
+ .user-section2,
+ .user-section3  {
+    width: 50%;
+    float: left;
+    padding: 10px 20px;
+
+}
+
+.user-section5 input,
+.user-section4 input,
+.user-section2 input,
+.user-section3 input {
+    float: left;
+}
+
+
+.manage-user .user-section2, 
+.manage-user  .user-section3, 
+.manage-user .user-section4, 
+.manage-user  .user-section5,
+.manage-user  .user-section1 {
+ width: 100% !important;
+ padding: 0px 15px !important;
+}
+
+.manage-user {
+    margin-top: -32px;
+}
+
+.manage-user .user-section2 input, 
+.manage-user  .user-section3 input, 
+.manage-user .user-section4 input, 
+.manage-user  .user-section5 input,
+.manage-user  .user-section1 input,
+.manage-user  select {
+    padding: 8px 15px !important;
+    height: unset !important;
+}
+
+.rolelabel {
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 23px;
+}
+
+.manage-user  .user-section4 #city {
+    width: 27% !important;
+}
+ 
+.manage-user  .user-section4  #country  {
+    width: 49% !important;
+}
+
+.adduserstatement{
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 3%;
+}
+
+
+
+/* below lines are for style of add/edit customer popup */
+.customer-section1 {
+    width: 100%;
+    float: left;
+    padding: 10px 20px;
+}
+
+.customer-section4 {
+    clear: left;
+}
+ .customer-section6,
+ .customer-section5,
+ .customer-section4,
+ .customer-section2,
+ .customer-section3  {
+    width: 50%;
+    float: left;
+    padding: 10px 20px;
+
+}
+.customer-section6 input,
+.customer-section5 input,
+.customer-section4 input,
+.customer-section2 input,
+.customer-section3 input {
+    float: left;
+}
+
+ 
+.create-customer .customer-section2,
+.create-customer .customer-section3,
+.create-customer .customer-section4,
+.create-customer .customer-section5,
+.create-customer .customer-section6,
+.create-customer .customer-section1{
+ width: 100% !important;
+ padding: 0px 15px !important;
+}
+
+.create-customer {
+    margin-top: -32px;
+}
+
+.create-customer .customer-section2 input, 
+.create-customer .customer-section3 input, 
+.create-customer .customer-section4 input, 
+.create-customer .customer-section5 input,
+.create-customer .customer-section1 input,
+.create-customer .customer-section6 input,
+.create-customer  select {
+    padding: 8px 15px !important;
+    height: unset !important;
+}
+
+.rolelabel {
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 23px;
+}
+
+.create-customer  .customer-section5 #city {
+    width: 27% !important;
+}
+ 
+.create-customer  .customer-section5  #country  {
+    width: 49% !important;
+}
+
+.create-customer  .customer-section6  #email  {
+    width: 96% !important;
+}
+
+.create-customer .popup-btn {
+    text-align: right;
+    padding-right: 2%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .manage-user .user-section4 #country {
+        width: 46%!important;
+    }
+    .create-address-main-div {
+        width: 100%;
+        float: left;
+        margin-top: 40px;
+    }
+    .create-customer .customer-section5 #country {
+        width: 46%!important;
+    }
+    .popup-container {
+        width: 100%;
+    }
+}
