@@ -5,11 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./Static/Assets/Background-image.png");
-  background-color: transparent;
+  /* background-image: url("./Static/Assets/Background-image.png"); */
+  /* background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -25px;
+  background-position: center -25px; */
 }
 
 code {

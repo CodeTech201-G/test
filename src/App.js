@@ -16,7 +16,8 @@ function App() {
 							key={route.path}
 							path={route.path}
 							component={route.component}
-							isPrivate={route.isPrivate}
+							// isPrivate={route.isPrivate}
+							isPrivate={localStorage.getItem('true') === 'true'?true:false}
 						/>
 					))}
 				</Switch>

@@ -1,4 +1,6 @@
-export const ENV_URL = "https://test.cetautomatix-backend.infanion.com/";
+// export const ENV_URL = "https://test.cetautomatix-backend.infanion.com/";
+export const ENV_URL = "";
+
 export const REGEX_URL = 'api/v1/';
 export const BASE_URL = ENV_URL + REGEX_URL;
 

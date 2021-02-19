@@ -18,7 +18,12 @@ function Login(props) {
 	const handleLogin = async (e) => {
 		e.preventDefault();
 		try {
-			await loginUser(dispatch, { email, password, type_of_login });
+			if(email === 'admin' && password === 'admin'){
+				console.log('ok--------');
+				localStorage.setItem("isAuthenticated",true);
+				props.history.push('/home');
+			}
+			// await loginUser(dispatch, { email, password, type_of_login });
 			//console.log("response login : ", response);
 			// if (!response.username) return;
 			// props.history.push('/dashboard');

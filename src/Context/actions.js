@@ -4,22 +4,25 @@ import { LoginUrl } from "../Services/ApiEndPoints";
 export async function loginUser(dispatch, loginPayload) {
   try {
     dispatch({ type: "REQUEST_LOGIN" });
-    await APICALL.service(LoginUrl, "POST", loginPayload)
-      .then((data) => {
-        if (data.code === "200") {
-          let results = data.data;
-          dispatch({ type: "LOGIN_SUCCESS", payload: results });
-          localStorage.setItem("currentUser", JSON.stringify(results));
-          localStorage.setItem("isAuthenticated",true)
+    dispatch({ type: "LOGIN_SUCCESS", payload: '' });
+    localStorage.setItem("currentUser", JSON.stringify(''));
+    localStorage.setItem("isAuthenticated",true)
+    // await APICALL.service(LoginUrl, "POST", loginPayload)
+      // .then((data) => {
+        // if (data.code === "200") {
+          // let results = data.data;
+          // dispatch({ type: "LOGIN_SUCCESS", payload: results });
+          // localStorage.setItem("currentUser", JSON.stringify(results));
+          // localStorage.setItem("isAuthenticated",true)
           // console.log("resobse : ", results);
-          return data;
-        } else {
-          data = { errors: [data.message] };
-          localStorage.setItem("isAuthenticated",false)
-        }
-        dispatch({ type: "LOGIN_ERROR", error: data.errors[0] });
-        return;
-      })
+          // return data;
+        // } else {
+        //   data = { errors: [data.message] };
+        //   localStorage.setItem("isAuthenticated",false)
+        // }
+        // dispatch({ type: "LOGIN_ERROR", error: data.errors[0] });
+        // return;
+      // })
       .catch((error) => {
         console.log(error);
       });
